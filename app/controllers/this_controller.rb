@@ -1,5 +1,11 @@
 class ThisController < ApplicationController
 
+  def not_cereal
+    puts "...but there is something about cereal in here. My current favorite is Rice Krispies."
+    render json: {message: "There isn't anything really about cereal in here."}
+  end
+
+
   def example_def
     x = 2
     y = 5
